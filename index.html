@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Currency Converter</title>
+
+</head>
+<body>
+    <div class="container">
+    <div class="currency-con">
+        <h1 align="center" style="font-size: 30px; color: darkred; font-variant: small-caps; font-weight: 600;"> Currency Convertor</h1>
+        <center>
+            <img height="100px" width="100px" src="https://cdn3d.iconscout.com/3d/premium/thumb/currency-conversion-7207795-5846231.png?f=webp">
+        </center>
+        <div style="margin-top: 20px;">
+            <form>
+                <label style="margin-left: 120px; font-weight: bolder; font-size :20px; font-variant:small-caps; color : grey;">Amount</label>
+                <input type="text" id="amount" placeholder="00">
+                <br><br>
+                <select id="from-currency">
+                    <option value="AED">AED</option>
+                    <option value="EUR">EUR</option>
+                    <option value="INR">INR</option>
+                    <option value="LKR">LKR</option>
+                    <option value="PKR">PKR</option>
+                    <option value="USD">USD</option>
+                    <option value="IQD">IQD</option>
+                    <option value="JPY">JPY</option>
+                    <option value="PHP">PHP</option>
+                </select>
+                <select id="to-currency">
+                    <option value="AED">AED</option>
+                    <option value="EUR">EUR</option>
+                    <option value="INR">INR</option>
+                    <option value="LKR">LKR</option>
+                    <option value="PKR">PKR</option>
+                    <option value="USD">USD</option>
+                    <option value="IQD">IQD</option>
+                    <option value="JPY">JPY</option>
+                    <option value="PHP">PHP</option>
+                </select>
+                <br><br>
+                <button type="button" onclick="convertCurrency()">Convert</button>
+                <h1 id="op">Output</h1>
+            </form>
+        </div>
+    </div>
+   </div>
+
+   <script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>
